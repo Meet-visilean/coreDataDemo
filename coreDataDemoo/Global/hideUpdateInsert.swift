@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+
+ var addclick  = false
+  var EditClick = false

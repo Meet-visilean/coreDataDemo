@@ -19,9 +19,10 @@ extension Employee {
     @NSManaged public var id: UUID?
     @NSManaged public var name: String?
     @NSManaged public var email: String?
-
+    
+    func convertToEmployee()-> CDEmployee
+    {
+        return CDEmployee(name: self.name, id: self.id!, email: self.email)
+    }
 }
 
-extension Employee : Identifiable {
-
-}
